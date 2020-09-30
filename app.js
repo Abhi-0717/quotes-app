@@ -1,5 +1,7 @@
+//Requiring the dotenv module 
 require('dotenv').config()
 
+//Requiring the modules
 const quote = require('inspirational-quotes')
 const express = require('express')
 const path = require('path')
@@ -8,7 +10,7 @@ const bodyParser = require('body-parser')
 
 app.use(bodyParser.json()); 
 
-// for parsing application
+// For parsing application
 app.use(bodyParser.urlencoded({ extended: true })); 
 
 //Setting view engine as hbs
